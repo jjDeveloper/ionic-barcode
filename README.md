@@ -1,4 +1,4 @@
-# A Ionic React Front end implementation of capacitor barcode scanner on a nestjs back end
+# An Ionic React Front end implementation of capacitor barcode scanner on a nestjs back end
 
 ```bash
 $ npm install
