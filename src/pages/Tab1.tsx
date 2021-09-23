@@ -25,8 +25,7 @@ const Tab1: React.FC = () => {
 
   useEffect(() => {
     if (scannedBarcode === undefined) return;
-    const url = 'https://3000-azure-armadillo-t4oaocm1.ws-us17.gitpod.io/'
-    // const url = 'https://localhost:3000/'
+    const url = 'https://localhost:3000/'
     const head: HeadersInit = [['Accept', 'application/json'], ['Content-Type', 'application/json']]
     const mode: RequestMode = 'cors'
     const body: BodyInit = JSON.stringify({ barcode: scannedBarcode })
