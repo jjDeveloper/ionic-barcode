@@ -1,19 +1,26 @@
-# A Create React App template on Gitpod
+# A Ionic React Front end implementation of capacitor barcode scanner on a nestjs back end
 
-This is a [Create React App](https://create-react-app.dev/) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
+```bash
+$ npm install
+$ cd nest-barcode
+$ npm install
+```
 
-## Next Steps
+## Run the nest server first
+```
+~/ionic-barcode/nest-server/ $ npm start
+```
 
-Click the button below to start a new development environment:
+## Run the Ionic Server
+```
+~/ionic-barcode/: $ yarn start
+```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-typescript-react)
+## Change the nest url to your local dev url
+```
+~/ionic-barcode/src/pages/Tab1.tsx
 
-## Get Started With Your Own Project
+// Edit this line
+const url = 'https://localhost:3000/'
 
-### A new project
-
-Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
-
-### An existing project
-
-To get started with Create React App on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file which contains the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+```
